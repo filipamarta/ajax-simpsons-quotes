@@ -1,0 +1,78 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.container {
+    text-align: center;
+}
+
+#quoteBtn {
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0 60px 0;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.18); 
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.18);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(0, 26, 255), #8793fd 50%, yellow 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+#quoteBtn:hover {
+    color: white;
+    background-position: 0 100%;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+#simpsons-quotes {
+    width: 600px;
+    margin: 0 auto;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.18); 
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.18);
+    padding: 20px;
+}
+
+#simpsons-quotes .quotecard {
+    display: flex;
+    text-align: left;
+}
+
+#simpsons-quotes .quotecard img {
+    width: 100px;
+}
+
+#simpsons-quotes .quotecard figcaption blockquote {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    text-align: left;
+    padding: 15px 40px;
+    font-family: 'Comic Neue', cursive;
+    line-height: 20px;
+}
+
+#simpsons-quotes .quotecard figcaption cite {
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(180, 179, 179);
+    text-align: left;
+    margin: 0;
+    padding: 15px 40px;
+    font-weight: 400;
+}
+
